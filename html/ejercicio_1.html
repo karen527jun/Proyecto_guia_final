@@ -33,15 +33,28 @@
                 <a href="./ejercicio_11.html" class="boton-estilo btn btn-dark m-2">Ejercicio 11</a>
                 <a href="./ejercicio_12.html" class="boton-estilo btn btn-dark m-2">Ejercicio 12</a>
             </div>
-            <div class="col-8">
+            <div class="col-8 p-5">
                 <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
-
+                <div class="card-wrap">
+                    <div>
+                        <h1>Calcular interés simple y capital final</h1>
+                        <label class="mt-4" for="cantidad">Ingrese una cantidad</label>
+                        <input id="cantidad" type="number" class="form-control"/>
+                        <button id="calcularInteres" class="btn btn-dark mt-4">Calcular</button>
+                    </div>
+                    <div class="flex">
+                        <h2 >Años: </h2><h5 id="anhos"></h5>
+                        <h2 >Interés: </h2><h5 id="interes"></h5>
+                        <h2 >Total:</h2> <h5 id="total"></h5>
+                    </div>
+                </div>
                 <!-- FINALIZA ---------------------------------------------------------------------- -->
             </div>
         </div>
         <div class="footer"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+    <script src="../javascript/ejercicio_1.js"></script>
 </body>
 
 </html>

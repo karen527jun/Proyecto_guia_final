@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+input{
+    width: 300px !important;
+}
+
+p{
+    margin: 0;
+}
+.card-wrap{
+    background-color: rgb(154, 121, 177);
+    padding: 50px;
+    height: 100%;
+    border-radius: 25px;
+}
