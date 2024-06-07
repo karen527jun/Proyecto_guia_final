@@ -36,16 +36,22 @@
             <div class="col-8 p-5">
                 <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
                 <div class="card-wrap">
-                    <div>
+                    <div class="d-flex justify-center flex-column align-items-center">
                         <h1>Calcular interés simple y capital final</h1>
-                        <label class="mt-4" for="cantidad">Ingrese una cantidad</label>
+                        <label class="my-4" for="cantidad">Ingrese una cantidad</label>
                         <input id="cantidad" type="number" class="form-control"/>
                         <button id="calcularInteres" class="btn btn-dark mt-4">Calcular</button>
                     </div>
-                    <div class="flex">
-                        <h2 >Años: </h2><h5 id="anhos"></h5>
-                        <h2 >Interés: </h2><h5 id="interes"></h5>
-                        <h2 >Total:</h2> <h5 id="total"></h5>
+                    <div class="d-flex justify-center mt-5">
+                        <div class="card-total shadow">
+                            <h2 class="text-center">Años: </h2><h4 class="text-center" id="anhos"></h4>
+                        </div>
+                        <div class="card-total shadow">
+                            <h4 class="text-center">Interés simple: </h4><h4 class="text-center" id="total"></h4>
+                        </div>
+                        <div class="card-total shadow">
+                            <h4 class="text-center">Capital final:</h4> <h4 class="text-center" id="capital_final"></h4>
+                        </div>
                     </div>
                 </div>
                 <!-- FINALIZA ---------------------------------------------------------------------- -->
