@@ -1,21 +1,26 @@
 const agregarDinero = () =>{
     let total = 0;
-    do{
+    try {
+        do{
         let respuesta = prompt("Ingresa una cantidad")
         respuesta = parseFloat(respuesta)
         total += respuesta;
         let pregunta = prompt("desea agregrar otra cantidad?s/n")
         if(pregunta.toLowerCase() == 'n'){
-            alertify.alert('Total: '+total);
+            alertify.alert('SUMA TOTAL','Total: '+total);
             break;
         }else if (pregunta.toLowerCase()=='s'){
             
         }else{
-            alertify.alert('error');
+            alertify.error('error...');
             break;
         }
        
     } while (true)
+    } catch (error) {
+        alertify.error('error...');
+    }
+    
 }
 const boton = document.getElementById('agregarDinero');
 boton.addEventListener('click',agregarDinero)
