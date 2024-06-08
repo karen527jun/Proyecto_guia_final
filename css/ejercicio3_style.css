@@ -1,0 +1,11 @@
+.titulo{
+    color: white;
+    text-align: center;
+}
+
+label{
+    color: white;
+}
+#cantidad{
+    width: 25%;
+}

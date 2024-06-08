@@ -33,15 +33,34 @@
                 <a href="./ejercicio_11.html" class="boton-estilo btn btn-dark m-2">Ejercicio 11</a>
                 <a href="./ejercicio_12.html" class="boton-estilo btn btn-dark m-2">Ejercicio 12</a>
             </div>
-            <div class="col-8">
+            <div class="col-8 p-5">
                 <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
-
+                <div class="card-wrap">
+                    <div class="d-flex justify-content-center flex-column align-items-center">
+                        <h1>Calcular interés simple y capital final</h1>
+                        <label class="my-4" for="cantidad">Ingrese una cantidad</label>
+                        <input id="cantidad" type="number" class="form-control"/>
+                        <button id="calcularInteres" class="btn btn-dark mt-4">Calcular</button>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <div class="card-total shadow">
+                            <h2 class="text-center">Años: </h2><h4 class="text-center" id="anhos"></h4>
+                        </div>
+                        <div class="card-total shadow">
+                            <h4 class="text-center">Interés simple: </h4><h4 class="text-center" id="total"></h4>
+                        </div>
+                        <div class="card-total shadow">
+                            <h4 class="text-center">Capital final:</h4> <h4 class="text-center" id="capital_final"></h4>
+                        </div>
+                    </div>
+                </div>
                 <!-- FINALIZA ---------------------------------------------------------------------- -->
             </div>
         </div>
         <div class="footer"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+    <script src="../javascript/ejercicio_1.js"></script>
 </body>
 
 </html>
