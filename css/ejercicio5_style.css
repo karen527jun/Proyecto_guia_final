@@ -1,0 +1,53 @@
+
+
+#formulario {
+    background: linear-gradient(45deg, #0d25ad91, #0077ff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grupo-campos {
+    display: inline-block;
+    margin: 10px;
+    text-align: left;
+}
+
+.grupo-campos label, .grupo-campos input {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #0d6dad;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #c0d411e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e5ff00ec;
+}
+
+@media (max-width: 600px) {
+    .grupo-campos {
+        display: block;
+        text-align: center;
+    }
+}

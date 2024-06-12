@@ -9,6 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <!-- Estilos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css" />
     <link rel="stylesheet" href="../css/index_style.css" />
     <link rel="stylesheet" href="../css/ejercicio4_style.css" />
 
@@ -35,6 +36,22 @@
             </div>
             <div class="col-8">
                 <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
+                    <form id="formulario">
+                        <h1>NUMEROS PARES E IMPARES</h1>
+                        <div class="grupo-campos">
+                            <label for="numero1">Ingrese el primer número:</label>
+                            <input type="number" id="numero1" name="numero1" min="-10000" max="10000" required>
+                        </div>
+                        
+                        <div class="grupo-campos">
+                            <label for="numero2">Ingrese el segundo número:</label>
+                            <input type="number" id="numero2" name="numero2" min="-10000" max="10000" required>
+                        </div><br>
+                        
+                        <button type="button" onclick="procesarNumeros()">Procesar</button>
+                    </form>
+            </div>
+                <div id="resultado"></div>
 
                 <!-- FINALIZA ---------------------------------------------------------------------- -->
             </div>
@@ -42,6 +59,7 @@
         <div class="footer"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+    <script src="../javascript/ejercicio_4.js"></script>
 </body>
 
 </html>
