@@ -35,13 +35,81 @@
       </div>
       <div class="col-8">
         <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
-
+        <div class="container">
+          <h1>Calculadora de Notas</h1>
+          <form id="notasForm">
+              <div class="alumno">
+                  <h2>Alumno 1</h2>
+                  <label for="nombre1">Nombre:</label>
+                  <input type="text" id="nombre1" required>
+                  <label for="nota1_1">Nota 1:</label>
+                  <input type="number" id="nota1_1" min="0" max="10" required>
+                  <label for="nota1_2">Nota 2:</label>
+                  <input type="number" id="nota1_2" min="0" max="10" required>
+                  <label for="nota1_3">Nota 3:</label>
+                  <input type="number" id="nota1_3" min="0" max="10" required>
+              </div>
+              <div class="alumno">
+                  <h2>Alumno 2</h2>
+                  <label for="nombre2">Nombre:</label>
+                  <input type="text" id="nombre2" required>
+                  <label for="nota2_1">Nota 1:</label>
+                  <input type="number" id="nota2_1" min="0" max="10" required>
+                  <label for="nota2_2">Nota 2:</label>
+                  <input type="number" id="nota2_2" min="0" max="10" required>
+                  <label for="nota2_3">Nota 3:</label>
+                  <input type="number" id="nota2_3" min="0" max="10" required>
+              </div>
+              <div class="alumno">
+                  <h2>Alumno 3</h2>
+                  <label for="nombre3">Nombre:</label>
+                  <input type="text" id="nombre3" required>
+                  <label for="nota3_1">Nota 1:</label>
+                  <input type="number" id="nota3_1" min="0" max="10" required>
+                  <label for="nota3_2">Nota 2:</label>
+                  <input type="number" id="nota3_2" min="0" max="10" required>
+                  <label for="nota3_3">Nota 3:</label>
+                  <input type="number" id="nota3_3" min="0" max="10" required>
+              </div>
+              <div class="alumno">
+                  <h2>Alumno 4</h2>
+                  <label for="nombre4">Nombre:</label>
+                  <input type="text" id="nombre4" required>
+                  <label for="nota4_1">Nota 1:</label>
+                  <input type="number" id="nota4_1" min="0" max="10" required>
+                  <label for="nota4_2">Nota 2:</label>
+                  <input type="number" id="nota4_2" min="0" max="10" required>
+                  <label for="nota4_3">Nota 3:</label>
+                  <input type="number" id="nota4_3" min="0" max="10" required>
+              </div>
+              <div class="alumno">
+                  <h2>Alumno 5</h2>
+                  <label for="nombre5">Nombre:</label>
+                  <input type="text" id="nombre5" required>
+                  <label for="nota5_1">Nota 1:</label>
+                  <input type="number" id="nota5_1" min="0" max="10" required>
+                  <label for="nota5_2">Nota 2:</label>
+                  <input type="number" id="nota5_2" min="0" max="10" required>
+                  <label for="nota5_3">Nota 3:</label>
+                  <input type="number" id="nota5_3" min="0" max="10" required>
+              </div>
+              <button type="button" onclick="calcularNotas()">Calcular</button>
+          </form>
+          <div id="resultado">
+              <h2>Resultados</h2>
+              <p id="promedios"></p>
+              <p id="aprobados"></p>
+              <p id="reprobados"></p>
+          </div>
+      </div>
         <!-- FINALIZA ---------------------------------------------------------------------- -->
       </div>
     </div>
     <div class="footer"></div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+  <script src="../javascript/ejercicio_8.js"></script>
+
 </body>
 
 </html>

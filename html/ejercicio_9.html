@@ -35,13 +35,35 @@
       </div>
       <div class="col-8">
         <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
-
+        <div class="container">
+          <h1>Contador de Números</h1>
+          <div id="inputs">
+              <input type="number" placeholder="0">
+              <input type="number" placeholder="0">
+              <input type="number" placeholder="0">
+              <input type="number" placeholder="0">
+              <input type="number" placeholder="0">
+              <input type="number" placeholder="0">
+              <input type="number" placeholder="0">
+              <input type="number" placeholder="0">
+              <input type="number" placeholder="0">
+              <input type="number" placeholder="0">
+          </div>
+          <button onclick="calculate()">Calcular</button>
+          <div id="results">
+              <p>Positivos: <span id="positiveCount">0</span></p>
+              <p>Negativos: <span id="negativeCount">0</span></p>
+              <p>Nulos: <span id="nullCount">0</span></p>
+          </div>
+      </div>
         <!-- FINALIZA ---------------------------------------------------------------------- -->
       </div>
     </div>
     <div class="footer"></div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+  <script src="../javascript/ejercicio_9.js"></script>
+
 </body>
 
 </html>
