@@ -1,0 +1,17 @@
+.container form {
+    background-color: #1f4070;
+    padding: 4% 6%;
+    border-radius: 8px;
+}
+
+#btn-iniciar {
+    display: block;
+    margin: 2rem auto;
+}
+
+.row {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/index_style.css" />
     <link rel="stylesheet" href="../css/ejercicio12_style.css" />
 
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 12</title>
 </head>
 
 <body>
@@ -35,58 +35,83 @@
             </div>
             <div class="col-8">
                 <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col mt-4">
+                        <form action="">
+                            <div class="alert alert-primary text-center" role="alert">
+                                Cración de un formuario de manera dinámica
+                            </div>
+                            <table>
+                            <tbody>
+                                <tr>
+                                    <td><label for="tipo-campo">Selecciona el campo</label></td>
+                                    <td>
+                                        <select id="tipo-campo" class="form-select">
+                                            <option value="text">Nombre</option>
+                                            <option value="number">Edad</option>
+                                            <option value="radiobutton">Genero</option>
+                                            <option value="date">Fecha de Nacimiento</option>
+                                            <option value="submmit">Enviar datos</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button class="btn btn-warning w-100" id="btn-generar">Generar Campo</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </form>
+                        </div>
+                    </div>
+                    <!-- FORMULARIO AUTOGENERADO -->
+                    <div class="row">
+                    <div class="col mt-3 mb-3">
 
+                    <form action="" id="formulario-autogenerado">
+
+                    <table>
+                        <!-- FILAS/COLUMNAS SE INSERTAN DINAMICAMENTE -->
+                    </table>
+
+                    </form>
+                    
+                    </div>
+                    </div>
+                </div>
                 <!-- FINALIZA ---------------------------------------------------------------------- -->
             </div>
         </div>
         <div class="footer"></div>
     </div>
+<!-- Alertify -->
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<!-- Hoja de trabajo JavaScript -->
+<script type="text/javascript" src="../javascript/ejercicio_12.js"></script>
+
 </body>
 
 </html>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <!-- Estilos -->
-    <link rel="stylesheet" href="../css/index_style.css" />
-    <link rel="stylesheet" href="../css/ejercicio11_style.css" />
+<!-- RADIO BUTTON ELEMENT
 
-    <title>Ejercicio 1</title>
-</head>
-
-<body>
-    <div class="contenedor-pagina">
-        <div class="header"></div>
-        <div class="contenedor row">
-            <div class="button-container col-4 d-flex flex-column" style="color: white">
-                <a href="./ejercicio_1.html" class="boton-estilo btn btn-dark m-2">Ejercicio 1</a>
-                <a href="./ejercicio_2.html" class="boton-estilo btn btn-dark m-2">Ejercicio 2</a>
-                <a href="./ejercicio_3.html" class="boton-estilo btn btn-dark m-2">Ejercicio 3</a>
-                <a href="./ejercicio_4.html" class="boton-estilo btn btn-dark m-2">Ejercicio 4</a>
-                <a href="./ejercicio_5.html" class="boton-estilo btn btn-dark m-2">Ejercicio 5</a>
-                <a href="./ejercicio_6.html" class="boton-estilo btn btn-dark m-2">Ejercicio 6</a>
-                <a href="./ejercicio_7.html" class="boton-estilo btn btn-dark m-2">Ejercicio 7</a>
-                <a href="./ejercicio_8.html" class="boton-estilo btn btn-dark m-2">Ejercicio 8</a>
-                <a href="./ejercicio_9.html" class="boton-estilo btn btn-dark m-2">Ejercicio 9</a>
-                <a href="./ejercicio_10.html" class="boton-estilo btn btn-dark m-2">Ejercicio 10</a>
-                <a href="./ejercicio_1.html" class="boton-estilo btn btn-dark m-2">Ejercicio 11</a>
-                <a href="" class="boton-estilo btn btn-dark m-2">Ejercicio 12</a>
-            </div>
-            <div class="col-8">
-                <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
-
-                <!-- FINALIZA ---------------------------------------------------------------------- -->
-            </div>
-        </div>
-        <div class="footer"></div>
+<div class='container'>
+<div class='row'>
+    <div class='col'>
+        <input type='radio' name='rdb-genero' id='masculino' class='form-check-input'>
+        <label for='masculino'>&nbsp;Masculino</label>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
-</body>
+    <div class='col'>
+        <input type='radio' name='rdb-genero' id='femenino' class='form-check-input'>
+        <label for='femenino'>&nbsp;Femenino</label>
+    </div>
+</div>
+</div>
 
-</html>
+ -->

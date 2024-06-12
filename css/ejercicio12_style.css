@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.container form {
+    background-color: #1f4070;
+    padding: 4% 6%;
+    border-radius: 8px;
+}
+
+
+
+.container {
+    max-width: 40em;
+}
+
+label {
+    width: 100%;
+    color: white;
+    text-align: left;
+}
+
+table, td, tr {
+    border: none;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+#btn-resutado {
+    height: 3.2rem;
+}
+
+#formulario-autogenerado {
+    display: none;
+}
+
+#formulario-autogenerado label {
+    display: inline;
+    
+    
+}

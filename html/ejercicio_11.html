@@ -9,10 +9,11 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <!-- Estilos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/index_style.css" />
   <link rel="stylesheet" href="../css/ejercicio11_style.css" />
 
-  <title>Ejercicio 1</title>
+  <title>Ejercicio 11</title>
 </head>
 
 <body>
@@ -35,13 +36,52 @@
       </div>
       <div class="col-8">
         <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
+          <div class="container">
+            <div class="row">
+              <div class="col m-5">
+                <form action="">
+                  <div class="alert alert-primary text-center" role="alert">
+                    Operaciones básicas matemáticas entre dos números
+                  </div>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td style="width: 30%;"><label for="primer-numero">Ingresa un número</label></td>
+                        <td style="width: 20%;"><input type="text" name="" id="primer-numero" class="form-control" autofocus></td>
+                        <td rowspan="3"><div id="resultado">Resultado</div></td>
+                      </tr>
+                      <tr>
+                        <td><label for="segundo-numero">Ingresa otro número</label></td>
+                        <td><input type="text" name="" id="segundo-numero" class="form-control"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                          <button class="btn btn-primary w-100" id="btn-resutado">Calcular</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+        
 
         <!-- FINALIZA ---------------------------------------------------------------------- -->
       </div>
     </div>
     <div class="footer"></div>
   </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Alertify -->
   <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.all.min.js"></script>
+
+  <!-- Hoja de trabajo JavaScript -->
+  <script type="text/javascript" src="../javascript/ejercicio_11.js"></script>
 </body>
 
 </html>
