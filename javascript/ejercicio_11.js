@@ -1,25 +1,19 @@
 $(document).ready(function () {
-    
-
-    
-
     $('#btn-resutado').click(function (e) { 
         e.preventDefault();
         
         let num1 = $("#primer-numero").val();
-    let num2 = $("#segundo-numero").val();
+        let num2 = $("#segundo-numero").val();
 
-        console.log("num1"+num1);
-        console.log("num2"+num2);
-
+        // Error por campos vacios
         if(num1 == "" || num2 == ""){
-            // alerta de error
             Swal.fire({
                 title: 'Error!',
                 text: 'Ambos números son requeridos',
                 icon: 'error',
                 confirmButtonText: 'OK'
-            }) 
+            })
+            // Error por no ingresar números
         } else if (isNaN(num1) || isNaN(num2)) {
             Swal.fire({
                 title: 'Error!',
@@ -41,7 +35,6 @@ $(document).ready(function () {
             $('#resultado').append("Multiplicación: " + multiplicar(num1, num2) + "<br>");
             
             // Pequeña excepción al dividir por 0
-
             if (num2 == 0) {
                 $('#resultado').append("No es posible dividir sobre 0");
             } else {
@@ -49,11 +42,10 @@ $(document).ready(function () {
             }
         }
 
-        
-
     });
 });
 
+// Funciones de operaciones
 function sumar(num1, num2) {
     return (num1 + num2);
 }
