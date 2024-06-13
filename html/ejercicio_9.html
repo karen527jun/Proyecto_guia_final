@@ -35,55 +35,7 @@
       </div>
       <div class="col-8">
         <!-- TU CODIGO AQUI ---------------------------------------------------------------- -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de Números</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        input {
-            width: 50px;
-            padding: 5px;
-            margin: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            padding: 10px 20px;
-            margin-top: 10px;
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #218838;
-        }
-        #results {
-            margin-top: 20px;
-        }
-        #results p {
-            font-size: 1.2em;
-        }
-    </style>
-</head>
-<body>
+
     <div class="container">
         <h1>Contador de Números</h1>
         <div id="inputs">
@@ -105,32 +57,7 @@
             <p>Nulos: <span id="nullCount">0</span></p>
         </div>
     </div>
-    <script>
-        function calculate() {
-            const inputs = document.querySelectorAll('#inputs input');
-            let positiveCount = 0;
-            let negativeCount = 0;
-            let nullCount = 0;
-
-            inputs.forEach(input => {
-                const value = parseFloat(input.value);
-                if (value > 0) {
-                    positiveCount++;
-                } else if (value < 0) {
-                    negativeCount++;
-                } else {
-                    nullCount++;
-                }
-            });
-
-            document.getElementById('positiveCount').innerText = positiveCount;
-            document.getElementById('negativeCount').innerText = negativeCount;
-            document.getElementById('nullCount').innerText = nullCount;
-        }
-    </script>
-</body>
-</html>
-
+ 
 
         <!-- FINALIZA ---------------------------------------------------------------------- -->
       </div>
@@ -138,6 +65,7 @@
     <div class="footer"></div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+  <script src="../javascript/ejercicio_9.js"></script>
 </body>
 
 </html>

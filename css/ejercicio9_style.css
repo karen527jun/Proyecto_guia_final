@@ -1,47 +1,61 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
+
 
 .container {
-    background-color: #fff;
+    background-color: #175568;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 90%;
+    width: 400px;
+    box-sizing: border-box;
 }
 
-input {
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #eee9e9;
+}
+
+#inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
 }
 
 button {
     padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #28a745;
+    font-size: 1em;
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
 #results {
     margin-top: 20px;
+    font-size: 1.2em;
 }
 
 #results p {
-    font-size: 1.2em;
+    margin: 5px 0;
+    color: #ffffff;
 }
